@@ -1,5 +1,5 @@
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
-
+ var game = new Phaser.Game( 800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
+   
 function preload() {
 
     //game.load.tilemap('level1', 'assets/tilemaps/pinktiledmap.json', null, Phaser.Tilemap.TILED_JSON);
@@ -111,4 +111,6 @@ function render () {
 }
 
 //http://fc03.deviantart.net/fs70/f/2014/028/1/d/custom_eqg_twilight_sparkle_sprite_sheet_by_ikuntyphoon-d742vds.png
+
+//http://cdnpix.com/show/199565827209467706_T909KkG6_c.jpg
 
