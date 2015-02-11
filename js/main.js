@@ -12,8 +12,6 @@ function preload() {
     game.load.image('restartbutton', 'assets/restartbutton.png');
     game.load.image('broken', 'assets/brokenheart.png');
     game.load.audio('song',['assets/happysong.mp3', 'assets/happysong.ogg']);
-    game.load.audio('kissa',['assets/kiss.mp3', 'assets/kiss.ogg']);
-    game.load.audio('boinga',['assets/boing.mp3', 'assets/boing.ogg']);
 //101 97
    // game.load.text('textload');
 
@@ -38,8 +36,6 @@ var timetext;
 var restart;
 var broken2;
 var music;
-var musicboing;
-var musickiss;
 
 function create() {
     //restart = game.add.sprite(-1000, 1000, 'restartbutton');
@@ -48,8 +44,6 @@ function create() {
     timer.start();
     
     music = game.add.audio('song');
-    musickiss = game.add.audio('kissa');
-    musicboing = game.add.audio('boinga');
     music.play();
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
@@ -110,7 +104,6 @@ function restartgame(){
 
 function getheart(body1, body2){
 	body2.kill();
-        musickiss.play();
 	score++;
 	scoretext.text = "Score: " + score;
 
@@ -118,7 +111,6 @@ function getheart(body1, body2){
 
 function minusfive(body1, body2){
 	body2.kill();
-        musicboing.play();
 	score = score - 5;
 	scoretext.text = "Score: " + score;
 
@@ -237,9 +229,8 @@ function render () {
 }
 //http://www.newgrounds.com/audio/listen/605917
 //http://fc03.deviantart.net/fs70/f/2014/028/1/d/custom_eqg_twilight_sparkle_sprite_sheet_by_ikuntyphoon-d742vds.png
-//http://static1.grsites.com/archive/sounds/cartoon/cartoon008.mp3
+//
 //http://cdnpix.com/show/199565827209467706_T909KkG6_c.jpg
-//http://static1.grsites.com/archive/sounds/cartoon/cartoon003.mp3
 //http://i.myniceprofile.com/548/54838.jpg
 
 }
