@@ -1,7 +1,9 @@
 window.onload = function() {
  var game = new Phaser.Game( 800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update} );
    
+
 function preload() {
+
 
     //game.load.tilemap('level1', 'assets/tilemaps/pinktiledmap.json', null, Phaser.Tilemap.TILED_JSON);
     //game.load.image('tiles-1', 'assets/tilemaps/tiles/tiles2.png');
