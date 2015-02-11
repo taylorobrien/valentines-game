@@ -235,6 +235,7 @@ function render () {
      game.debug.bodyInfo(player, 16, 24);
 
 }
+//http://s1036.photobucket.com/user/TaleahCosgrove/media/backgrounds/pink-background-clouds.jpg.html
 //http://www.newgrounds.com/audio/listen/605917
 //http://fc03.deviantart.net/fs70/f/2014/028/1/d/custom_eqg_twilight_sparkle_sprite_sheet_by_ikuntyphoon-d742vds.png
 //http://static1.grsites.com/archive/sounds/cartoon/cartoon008.mp3
@@ -243,3 +244,4 @@ function render () {
 //http://i.myniceprofile.com/548/54838.jpg
 
 }
+
