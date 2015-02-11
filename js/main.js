@@ -135,7 +135,7 @@ function breakme(){
 	var brokencand = broken2.create(1000, game.world.randomY, 'broken');
 	//var brokencand = broken2.create(300, 300, 'broken');
 	//brokencand.body.gravity.y = 0;
-        brokencand.body.velocity.x = -300;
+        brokencand.body.velocity.x = -300-(2*(90-timeleft));
 	brokencand.body.allowGravity = false;
 
 
